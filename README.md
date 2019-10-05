@@ -11,11 +11,11 @@ Connect PIR VIN — ESP8266 5V, PIR GND — ESP 8266 GND, PIR Digital Out — ES
 Connect +ve leg of external Red LED to resistor and resistor to ESP 8266 D5 and -ve leg to GND of ESP 8266. Connect +ve leg of external Green LED to resistor and resistor to ESP 8266 D6 and -ve leg to GND of ESP 8266. Utilize breadboard to do these connections.
 
 **Programming**
-Once the circuit is complete, programming part starts. Open Arduino IDE and create new sketch. Write a program to interface with PIR sensor and light up the Red LED when no object is near the sensor. Add a condition to light up Green LED when any object is near to sensor and switch off the Red LED. You will get plenty of code examples on google to do this. [Here is one example] (https://playground.arduino.cc/Code/PIRsense/).
+Once the circuit is complete, programming part starts. Open Arduino IDE and create new sketch. Write a program to interface with PIR sensor and light up the Red LED when no object is near the sensor. Add a condition to light up Green LED when any object is near to sensor and switch off the Red LED. You will get plenty of code examples on google to do this. [Here is one example](https://playground.arduino.cc/Code/PIRsense/).
 
 Create a IBM Bluemix account and create an IoT platform starter app. Note down the keys and add these keys in the Arduino sketch where you are calling the Bluemix service.
 
-We also create push notification service on Bluemix and provide Firebase cloud messaging project details in it. The push notification app guid and client secret needs to be part of your android app. Open android studio and create a simple app with one imageview and buttons for registering the device and resetting app. You will get examples of this code as well in various free e.g. [github repositories] (https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush).
+We also create push notification service on Bluemix and provide Firebase cloud messaging project details in it. The push notification app guid and client secret needs to be part of your android app. Open android studio and create a simple app with one imageview and buttons for registering the device and resetting app. You will get examples of this code as well in various free e.g. [github repositories](https://github.com/ibm-bluemix-mobile-services/bms-samples-android-hellopush).
 
 Once the app is created, you need to install it on your android phone. Thats it. With this I was able to send PIR sensor data to my android phone and also indicate LED changes based on sensor data changes.
 
