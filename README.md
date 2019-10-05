@@ -3,6 +3,8 @@
 This is my first attempt with IoT and I created IoT enabled motion sensor. So I am going to briefly explain how I went about it.
 The goal was to detect an object near a sensor, change LED status to indicate that some object has come in the vicinity of sensor and also send a push notification to android mobile phone.
 
+![alt text](https://github.com/techpro-sachin/IoTMotionSensor/blob/master/iotconcept.png)
+
 It requires both hardware and software components. In hardware, I have used a PIR motion sensor, ESP8266 WiFi board, A breadboard, Red and Green LED strips and 1k ohm resistors, a laptop, USB cable, 5V/2A DC power adapter. These components will be available at any online shopping portal (like amazon) or at your local electronics hobby shop. In Software, I had installed Arduino IDE, ESP8266 library and Android Studio on my Windows 7 32-bit laptop. I have also used IBM Bluemix and Google Firebase cloud platforms for sending communication from sensor to mobile.
 
 **The Circuit**
